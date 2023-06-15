@@ -96,7 +96,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
 
@@ -118,5 +118,33 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    padding: 5px;
+    padding: 1px;
+}
+@media (max-width: 550px){
+    .cabecalho {
+        width: 100%;
+        padding: 2px;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 4%;
+    }
+    .apresentacao__conteudo {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 6%;
+    }
+
+    .apresentacao__links__subtitulo {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .apresentacao__links {
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .apresentacao__links__link {
+        justify-content: flex-start;
+    }
 }
